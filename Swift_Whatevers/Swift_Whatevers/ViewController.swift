@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     
     var userIsInTheMiddleOfTypingANumber: Bool  = false
     
+    var operandsStack = Array<Double> ()
+    
     @IBAction func appendDigit(sender: UIButton) {
         
         let digit = sender.currentTitle!        // ! - means Optional String "unwrapping" to String
@@ -29,6 +31,10 @@ class ViewController: UIViewController {
             userIsInTheMiddleOfTypingANumber = true
         }
         
+    }
+    
+    @IBAction func enter() {
+        userIsInTheMiddleOfTypingANumber = false;
     }
 
     override func viewDidLoad() {
