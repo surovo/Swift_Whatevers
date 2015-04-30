@@ -12,6 +12,15 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var display: UILabel!
+    
+    
+    @IBAction func appendDigit(sender: UIButton) {
+        
+        let digit = sender.currentTitle!;       // ! - means Optional String "unwrapping" to String
+        println("you pressed \(digit), digit");
+        
+        self.display.text = self.display.text! + digit;
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

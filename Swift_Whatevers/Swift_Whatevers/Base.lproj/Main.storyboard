@@ -24,12 +24,182 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIv-LS-hHC">
+                                <rect key="frame" x="16" y="101" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.86847259292634182" green="1" blue="0.79716018818448764" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="TAK-AY-Vbm"/>
+                                    <constraint firstAttribute="width" constant="64" id="ZNg-IS-ctp"/>
+                                </constraints>
+                                <state key="normal" title="7">
+                                    <color key="titleColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="appendDigit:" destination="dgN-5i-02p" eventType="touchUpInside" id="hr3-2m-p07"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ve8-WL-hTd">
+                                <rect key="frame" x="88" y="101" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.86847259290000001" green="1" blue="0.79716018820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="LEh-Sv-frF"/>
+                                    <constraint firstAttribute="width" constant="64" id="qKg-Qw-0cs"/>
+                                </constraints>
+                                <state key="normal" title="8">
+                                    <color key="titleColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="appendDigit:" destination="dgN-5i-02p" eventType="touchUpInside" id="Qfh-Vf-8h0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vte-Zs-n0q">
+                                <rect key="frame" x="160" y="101" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.86847259290000001" green="1" blue="0.79716018820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="2QC-Tx-rEk"/>
+                                    <constraint firstAttribute="width" constant="64" id="dNT-Pq-CTV"/>
+                                </constraints>
+                                <state key="normal" title="9">
+                                    <color key="titleColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="appendDigit:" destination="dgN-5i-02p" eventType="touchUpInside" id="UDZ-U5-p04"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFy-0S-iQl">
+                                <rect key="frame" x="16" y="173" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.86847259290000001" green="1" blue="0.79716018820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="HNT-wY-h39"/>
+                                    <constraint firstAttribute="height" constant="64" id="jAL-9w-2aI"/>
+                                </constraints>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="appendDigit:" destination="dgN-5i-02p" eventType="touchUpInside" id="TYf-mu-1f3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lx9-OP-SVr">
+                                <rect key="frame" x="88" y="173" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.86847259290000001" green="1" blue="0.79716018820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Ee8-P9-6Mt"/>
+                                    <constraint firstAttribute="width" constant="64" id="vi6-Sh-EcS"/>
+                                </constraints>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="appendDigit:" destination="dgN-5i-02p" eventType="touchUpInside" id="gOP-A6-4JH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OB-7h-kPP">
+                                <rect key="frame" x="160" y="173" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.86847259290000001" green="1" blue="0.79716018820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="BMc-TZ-WZh"/>
+                                    <constraint firstAttribute="width" constant="64" id="wgh-cI-FIA"/>
+                                </constraints>
+                                <state key="normal" title="6">
+                                    <color key="titleColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="appendDigit:" destination="dgN-5i-02p" eventType="touchUpInside" id="Fef-ZB-0Gx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQg-5s-Iiz">
+                                <rect key="frame" x="16" y="245" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.86847259290000001" green="1" blue="0.79716018820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="h3U-To-LJG"/>
+                                    <constraint firstAttribute="width" constant="64" id="tIe-su-UdE"/>
+                                </constraints>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="appendDigit:" destination="dgN-5i-02p" eventType="touchUpInside" id="1Ta-Dx-cTP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2F6-So-C4R">
+                                <rect key="frame" x="88" y="245" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.86847259290000001" green="1" blue="0.79716018820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="63I-bl-3ym"/>
+                                    <constraint firstAttribute="width" constant="64" id="bUR-eH-30W"/>
+                                </constraints>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="appendDigit:" destination="dgN-5i-02p" eventType="touchUpInside" id="gss-gt-3uo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAh-jM-W9t">
+                                <rect key="frame" x="160" y="245" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.86847259290000001" green="1" blue="0.79716018820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="72A-mt-Fpc"/>
+                                    <constraint firstAttribute="width" constant="64" id="uy2-2e-z8Z"/>
+                                </constraints>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="appendDigit:" destination="dgN-5i-02p" eventType="touchUpInside" id="gTa-PS-1sw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6y-NW-edQ">
+                                <rect key="frame" x="88" y="317" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.86847259290000001" green="1" blue="0.79716018820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="3Y8-ci-z6c"/>
+                                    <constraint firstAttribute="width" constant="64" id="YUH-Rw-anW"/>
+                                </constraints>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="appendDigit:" destination="dgN-5i-02p" eventType="touchUpInside" id="9dV-Ox-LEr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="lx9-OP-SVr" firstAttribute="top" secondItem="VFy-0S-iQl" secondAttribute="top" id="3yn-ie-bzl"/>
+                            <constraint firstItem="VFy-0S-iQl" firstAttribute="leading" secondItem="yIv-LS-hHC" secondAttribute="leading" id="4FA-SY-FoA"/>
+                            <constraint firstItem="vte-Zs-n0q" firstAttribute="leading" secondItem="Ve8-WL-hTd" secondAttribute="trailing" constant="8" id="4X1-2i-yoV"/>
+                            <constraint firstItem="y6y-NW-edQ" firstAttribute="top" secondItem="2F6-So-C4R" secondAttribute="bottom" constant="8" id="5LL-vw-GNJ"/>
+                            <constraint firstItem="Ve8-WL-hTd" firstAttribute="top" secondItem="yIv-LS-hHC" secondAttribute="top" id="5uy-Wc-WSS"/>
+                            <constraint firstItem="y6y-NW-edQ" firstAttribute="leading" secondItem="2F6-So-C4R" secondAttribute="leading" id="6K4-w0-w57"/>
                             <constraint firstItem="ht4-AF-rsE" firstAttribute="trailing" secondItem="r3S-a8-73S" secondAttribute="trailingMargin" id="7Ud-FC-uxu"/>
+                            <constraint firstItem="DAh-jM-W9t" firstAttribute="leading" secondItem="2F6-So-C4R" secondAttribute="trailing" constant="8" id="9Ay-cZ-3H9"/>
+                            <constraint firstItem="VFy-0S-iQl" firstAttribute="top" secondItem="yIv-LS-hHC" secondAttribute="bottom" constant="8" id="9af-KA-oif"/>
+                            <constraint firstItem="VFy-0S-iQl" firstAttribute="leading" secondItem="vQg-5s-Iiz" secondAttribute="leading" id="CwX-pZ-ndZ"/>
+                            <constraint firstItem="lx9-OP-SVr" firstAttribute="leading" secondItem="VFy-0S-iQl" secondAttribute="trailing" constant="8" id="FJb-oE-sII"/>
+                            <constraint firstItem="1OB-7h-kPP" firstAttribute="leading" secondItem="lx9-OP-SVr" secondAttribute="trailing" constant="8" id="MxI-JE-3a0"/>
                             <constraint firstItem="ht4-AF-rsE" firstAttribute="top" secondItem="yb5-mP-iX5" secondAttribute="bottom" constant="8" id="V6H-fh-Q4Q"/>
+                            <constraint firstItem="vte-Zs-n0q" firstAttribute="top" secondItem="Ve8-WL-hTd" secondAttribute="top" id="VcM-eC-CjJ"/>
+                            <constraint firstItem="lx9-OP-SVr" firstAttribute="top" secondItem="1OB-7h-kPP" secondAttribute="top" id="aQU-px-Tbc"/>
+                            <constraint firstItem="2F6-So-C4R" firstAttribute="top" secondItem="vQg-5s-Iiz" secondAttribute="top" id="lLY-zy-06S"/>
                             <constraint firstItem="ht4-AF-rsE" firstAttribute="leading" secondItem="r3S-a8-73S" secondAttribute="leadingMargin" id="oua-oH-1J5"/>
+                            <constraint firstItem="Ve8-WL-hTd" firstAttribute="leading" secondItem="yIv-LS-hHC" secondAttribute="trailing" constant="8" id="pUb-cQ-dAs"/>
+                            <constraint firstItem="yIv-LS-hHC" firstAttribute="top" secondItem="ht4-AF-rsE" secondAttribute="bottom" constant="8" id="q7f-xE-KUi"/>
+                            <constraint firstItem="vQg-5s-Iiz" firstAttribute="top" secondItem="VFy-0S-iQl" secondAttribute="bottom" constant="8" id="r3P-tr-BhC"/>
+                            <constraint firstItem="ht4-AF-rsE" firstAttribute="leading" secondItem="yIv-LS-hHC" secondAttribute="leading" id="w5l-EG-Qso"/>
+                            <constraint firstItem="DAh-jM-W9t" firstAttribute="top" secondItem="2F6-So-C4R" secondAttribute="top" id="yf7-xq-x8z"/>
+                            <constraint firstItem="2F6-So-C4R" firstAttribute="leading" secondItem="vQg-5s-Iiz" secondAttribute="trailing" constant="8" id="yyt-GX-V9c"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
