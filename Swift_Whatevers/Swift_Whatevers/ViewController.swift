@@ -13,13 +13,22 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var display: UILabel!
     
+    var userIsInTheMiddleOfTypingANumber: Bool  = false
     
     @IBAction func appendDigit(sender: UIButton) {
         
-        let digit = sender.currentTitle!;       // ! - means Optional String "unwrapping" to String
-        println("you pressed \(digit), digit");
+        let digit = sender.currentTitle!        // ! - means Optional String "unwrapping" to String
+        println("you pressed \(digit), digit")
         
-        self.display.text = self.display.text! + digit;
+        if userIsInTheMiddleOfTypingANumber {
+            
+            self.display.text = self.display.text! + digit
+        } else {
+            
+            self.display.text = digit
+            userIsInTheMiddleOfTypingANumber = true
+        }
+        
     }
 
     override func viewDidLoad() {
