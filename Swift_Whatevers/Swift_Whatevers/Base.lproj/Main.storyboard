@@ -172,7 +172,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rk3-tC-xC9">
                                 <rect key="frame" x="360" y="351" width="104" height="116"/>
                                 <color key="backgroundColor" red="0.86847259290000001" green="1" blue="0.79716018820000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="x">
+                                <state key="normal" title="×">
                                     <color key="titleColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -213,7 +213,7 @@
                                 <rect key="frame" x="472" y="475" width="104" height="117"/>
                                 <color key="backgroundColor" red="0.86847259290000001" green="1" blue="0.79716018820000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="15"/>
-                                <state key="normal" title="⎷">
+                                <state key="normal" title="√">
                                     <color key="titleColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
