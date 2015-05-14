@@ -16,9 +16,7 @@ class ViewController: UIViewController {
     var userIsInTheMiddleOfTypingANumber: Bool  = false
     
     var brain = CalculatorBrain()
-    
-    var operandsStack = Array<Double> ()
-    
+       
     @IBAction func appendDigit(sender: UIButton) {
         
         let digit = sender.currentTitle!        // ! - means Optional String "unwrapping" to String
@@ -35,20 +33,35 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func operate(sender: UIButton) {
+        if userIsInTheMiddleOfTypingANumber {
+            enter()
+        }
+        if let operation = sender.currentTitle {
+            if let result = brain.performOperation(operation) {
+                displayValue = result
+            } else {
+                // error?
+                displayValue = 0  // задание 2
+            }
+        }
+    }
+    
     @IBAction func enter() {
         userIsInTheMiddleOfTypingANumber = false;
+        brain.pushOperand(displayValue)
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    var displayValue: Double {
+        get {
+            return NSNumberFormatter().numberFromString(display.text!)!.doubleValue
+        }
+        set {
+            display.text = "\(newValue)"
+            userIsInTheMiddleOfTypingANumber = false
+        }
     }
-
 
 }
 

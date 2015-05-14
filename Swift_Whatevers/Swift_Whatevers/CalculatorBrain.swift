@@ -10,10 +10,25 @@ import Foundation
 
 class CalculatorBrain {
     
-    private enum Op {
+    private enum Op : Printable {           //Printable - протокол, enum'ы наследовать нельзя
         case Operand            (Double)
         case UnaryOperation     (String, Double -> Double)              // Double -> Double == принимает функцию с одним аргументом, которая возвращает Double
         case BinaryOperation    (String, (Double, Double) -> Double)    // (Double, Double) -> Double == принимает функцию с двумя аргументами, которая возвращает Double
+        
+        // далее создано вычисляемое свойство (Computed property), которое нужно для корректной работы функции println() когда мы хотим вывести Op в консоль
+        
+        var description: String {
+            get {
+                switch self {
+                    case .Operand(let operand) :
+                            return "\(operand)"
+                    case .BinaryOperation(let symbol, _) :
+                            return "\(symbol)"
+                    case .UnaryOperation(let symbol, _) :
+                            return "\(symbol)"
+                }
+            }
+        }
     }
     
     private var operandsArray = [Op]()
@@ -39,19 +54,21 @@ class CalculatorBrain {
     
     func pushOperand(operand: Double) {
         self.operandsArray.append(Op.Operand(operand))
+        println("\(self.operandsArray)")
     }
     
-    func performOperation(symbol: String) {
+    func performOperation(symbol: String)->Double? {
         
         if let operation = supportedMathOperations[symbol] {
             operandsArray.append(operation)                             //помещаем в массив только если операция поддерживается (присутствует в supportedMathOperations)
         }
         
+        return calculate()
     }
     
     func calculate() -> Double? {
         let (result, _) = evaluate(operandsArray)            // это всего лишь другой способ получить Tuple, _ означает что мы игнорируем одно из значений. Имена переменных могут отличаться
-        return nil
+        return result
     }
     
     private func evaluate (var ops: [Op]) -> (result: Double?, remainingOps: [Op] ) {   // var ops: [Op] - var означает что мы хотим иметь мутабельный (изменяемый массив) внутри функции
