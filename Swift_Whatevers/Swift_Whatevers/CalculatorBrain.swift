@@ -10,15 +10,15 @@ import Foundation
 
 class CalculatorBrain {
     
-    enum Op {
+    private enum Op {
         case Operand            (Double)
         case UnaryOperation     (String, Double -> Double)              // Double -> Double == принимает функцию с одним аргументом, которая возвращает Double
         case BinaryOperation    (String, (Double, Double) -> Double)    // (Double, Double) -> Double == принимает функцию с двумя аргументами, которая возвращает Double
     }
     
-    var operandsArray = [Op]()
+    private var operandsArray = [Op]()
     
-    var supportedMathOperations = [String : Op]()
+    private var supportedMathOperations = [String : Op]()
     
     init () {
         supportedMathOperations["×"] = Op.BinaryOperation("×", *)
@@ -47,6 +47,44 @@ class CalculatorBrain {
             operandsArray.append(operation)                             //помещаем в массив только если операция поддерживается (присутствует в supportedMathOperations)
         }
         
+    }
+    
+    func calculate() -> Double? {
+        let (result, _) = evaluate(operandsArray)            // это всего лишь другой способ получить Tuple, _ означает что мы игнорируем одно из значений. Имена переменных могут отличаться
+        return nil
+    }
+    
+    private func evaluate (var ops: [Op]) -> (result: Double?, remainingOps: [Op] ) {   // var ops: [Op] - var означает что мы хотим иметь мутабельный (изменяемый массив) внутри функции
+        
+        if !ops.isEmpty {
+            
+            //если стек операндов и операци не пуст
+            
+            let op = ops.removeLast()                                   // Arrays и Dictionaries в Swift не являются классами, это структуры и они передаются по значению!!!
+            
+            switch op {
+                
+                case .Operand(let operand) :
+                    //В круглых скобках следом за конструкцией  .Operand ( ) вас спрашивают, что вы хотите сделать с ассоциированным значением, если вы обрабатываете этот вариант ( case ), то есть в случае, если это операнд. Я хочу присвоить это ассоциированное значение константе с именем operand.
+                    return (operand, ops)
+                    
+                case .UnaryOperation(_, let function) :                     // _ означает что мы игнорируем это значение
+                    let operandEvaluation = evaluate(ops)
+                    if let operand = operandEvaluation.result {
+                        return (function(operand), operandEvaluation.remainingOps)
+                    }
+                    
+                case .BinaryOperation(_, let doubleOperandsFunction) :      // _ означает что мы игнорируем это значение
+                    let op1Evaluation = evaluate(ops)
+                    if let operand1 = op1Evaluation.result {
+                        let op2Evaluation = evaluate(op1Evaluation.remainingOps)
+                        if let operand2 = op2Evaluation.result {
+                            return (doubleOperandsFunction(operand1, operand2), op2Evaluation.remainingOps)
+                        }
+                    }
+            }
+        }
+        return (nil, ops)
     }
 
 }

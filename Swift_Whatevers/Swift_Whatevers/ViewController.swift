@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     
     var userIsInTheMiddleOfTypingANumber: Bool  = false
     
+    var brain = CalculatorBrain()
+    
     var operandsStack = Array<Double> ()
     
     @IBAction func appendDigit(sender: UIButton) {
