@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Rww-2G-w7Z">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="YvD-hL-qJs">
+            <objects>
+                <navigationController id="Rww-2G-w7Z" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TBT-RO-8MY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Cik-kd-pZX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xzb-ff-yol" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-397" y="-4"/>
+        </scene>
+        <!--Counter Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CounterController" customModule="Frame_counter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iRN-BB-E4e">
+                                <rect key="frame" x="276" y="101" width="51" height="31"/>
+                                <connections>
+                                    <action selector="userDidCockShutter:" destination="BYZ-38-t0r" eventType="valueChanged" id="EQj-4w-ZP3"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shutter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVr-6h-VuA">
+                                <rect key="frame" x="16" y="72" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.43137254899999999" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbV-om-c5L">
+                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.86918627934623438" blue="0.55000677336097603" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Wx9-bk-gs2"/>
+                                    <constraint firstAttribute="width" constant="100" id="wJz-Ms-UJo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="40"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="userDidShot" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zy7-IP-D6c"/>
+                                    <outletCollection property="gestureRecognizers" destination="iDb-p9-he7" appends="YES" id="Z2U-9I-P88"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frames" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EO8-vZ-Ycg">
+                                <rect key="frame" x="16" y="221" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.43137254899999999" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="TbV-om-c5L" secondAttribute="centerX" id="1Gh-8E-NSC"/>
+                            <constraint firstItem="zVr-6h-VuA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Jso-XA-71T"/>
+                            <constraint firstItem="TbV-om-c5L" firstAttribute="top" secondItem="EO8-vZ-Ycg" secondAttribute="bottom" constant="8" id="Rfx-78-Qgw"/>
+                            <constraint firstAttribute="centerY" secondItem="TbV-om-c5L" secondAttribute="centerY" id="acU-QH-fby"/>
+                            <constraint firstAttribute="centerX" secondItem="iRN-BB-E4e" secondAttribute="centerX" constant="-0.5" id="hOi-6L-4vN"/>
+                            <constraint firstItem="zVr-6h-VuA" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="iex-Ob-rzC"/>
+                            <constraint firstItem="zVr-6h-VuA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pp9-80-ps4"/>
+                            <constraint firstItem="iRN-BB-E4e" firstAttribute="top" secondItem="zVr-6h-VuA" secondAttribute="bottom" constant="8" id="rUc-fW-G4W"/>
+                            <constraint firstItem="EO8-vZ-Ycg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wP0-W7-CNd"/>
+                            <constraint firstItem="EO8-vZ-Ycg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wX3-zY-nlJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JbW-2N-0Sn"/>
+                    <connections>
+                        <outlet property="clearCounterRecognizer" destination="iDb-p9-he7" id="d5V-KZ-Fdl"/>
+                        <outlet property="shootButton" destination="TbV-om-c5L" id="IfN-CG-lQx"/>
+                        <outlet property="shutterControl" destination="iRN-BB-E4e" id="API-iE-s8k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="2.0000000000000004" id="iDb-p9-he7">
+                    <connections>
+                        <action selector="clearFrames:" destination="BYZ-38-t0r" id="LcK-mM-p0U"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="426" y="-4"/>
+        </scene>
+    </scenes>
+</document>

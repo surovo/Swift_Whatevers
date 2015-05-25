@@ -14,6 +14,11 @@
 		D8D05E8E1AF21FF700D3BDC3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8D05E8D1AF21FF700D3BDC3 /* Images.xcassets */; };
 		D8D05E911AF21FF700D3BDC3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8D05E8F1AF21FF700D3BDC3 /* LaunchScreen.xib */; };
 		D8D05E9D1AF21FF700D3BDC3 /* Swift_WhateversTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D05E9C1AF21FF700D3BDC3 /* Swift_WhateversTests.swift */; };
+		D8DED3BD1B130C8A00844650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DED3BC1B130C8A00844650 /* AppDelegate.swift */; };
+		D8DED3BF1B130C8A00844650 /* CounterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DED3BE1B130C8A00844650 /* CounterController.swift */; };
+		D8DED3C21B130C8A00844650 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8DED3C01B130C8A00844650 /* Main.storyboard */; };
+		D8DED3D31B130C8B00844650 /* Frame_counterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DED3D21B130C8B00844650 /* Frame_counterTests.swift */; };
+		D8DED3DC1B131AD800844650 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8DED3DA1B131AD800844650 /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +28,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = D8D05E801AF21FF700D3BDC3;
 			remoteInfo = Swift_Whatevers;
+		};
+		D8DED3CD1B130C8B00844650 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8D05E791AF21FF700D3BDC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8DED3B71B130C8A00844650;
+			remoteInfo = "Frame counter";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -38,6 +50,15 @@
 		D8D05E961AF21FF700D3BDC3 /* Swift_WhateversTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swift_WhateversTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D05E9B1AF21FF700D3BDC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8D05E9C1AF21FF700D3BDC3 /* Swift_WhateversTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_WhateversTests.swift; sourceTree = "<group>"; };
+		D8DED3B81B130C8A00844650 /* Frame counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Frame counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8DED3BB1B130C8A00844650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8DED3BC1B130C8A00844650 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8DED3BE1B130C8A00844650 /* CounterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterController.swift; sourceTree = "<group>"; };
+		D8DED3C11B130C8A00844650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8DED3CC1B130C8B00844650 /* Frame counterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Frame counterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8DED3D11B130C8B00844650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8DED3D21B130C8B00844650 /* Frame_counterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frame_counterTests.swift; sourceTree = "<group>"; };
+		D8DED3DB1B131AD800844650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +76,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D8DED3B51B130C8A00844650 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8DED3C91B130C8B00844650 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,6 +98,8 @@
 			children = (
 				D8D05E831AF21FF700D3BDC3 /* Swift_Whatevers */,
 				D8D05E991AF21FF700D3BDC3 /* Swift_WhateversTests */,
+				D8DED3B91B130C8A00844650 /* Frame counter */,
+				D8DED3CF1B130C8B00844650 /* Frame counterTests */,
 				D8D05E821AF21FF700D3BDC3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +109,8 @@
 			children = (
 				D8D05E811AF21FF700D3BDC3 /* Swift_Whatevers.app */,
 				D8D05E961AF21FF700D3BDC3 /* Swift_WhateversTests.xctest */,
+				D8DED3B81B130C8A00844650 /* Frame counter.app */,
+				D8DED3CC1B130C8B00844650 /* Frame counterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +154,43 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D8DED3B91B130C8A00844650 /* Frame counter */ = {
+			isa = PBXGroup;
+			children = (
+				D8DED3DA1B131AD800844650 /* LaunchScreen.xib */,
+				D8DED3BC1B130C8A00844650 /* AppDelegate.swift */,
+				D8DED3BE1B130C8A00844650 /* CounterController.swift */,
+				D8DED3C01B130C8A00844650 /* Main.storyboard */,
+				D8DED3BA1B130C8A00844650 /* Supporting Files */,
+			);
+			path = "Frame counter";
+			sourceTree = "<group>";
+		};
+		D8DED3BA1B130C8A00844650 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8DED3BB1B130C8A00844650 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8DED3CF1B130C8B00844650 /* Frame counterTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8DED3D21B130C8B00844650 /* Frame_counterTests.swift */,
+				D8DED3D01B130C8B00844650 /* Supporting Files */,
+			);
+			path = "Frame counterTests";
+			sourceTree = "<group>";
+		};
+		D8DED3D01B130C8B00844650 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8DED3D11B130C8B00844650 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,6 +229,41 @@
 			productReference = D8D05E961AF21FF700D3BDC3 /* Swift_WhateversTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		D8DED3B71B130C8A00844650 /* Frame counter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8DED3D81B130C8B00844650 /* Build configuration list for PBXNativeTarget "Frame counter" */;
+			buildPhases = (
+				D8DED3B41B130C8A00844650 /* Sources */,
+				D8DED3B51B130C8A00844650 /* Frameworks */,
+				D8DED3B61B130C8A00844650 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Frame counter";
+			productName = "Frame counter";
+			productReference = D8DED3B81B130C8A00844650 /* Frame counter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D8DED3CB1B130C8B00844650 /* Frame counterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8DED3D91B130C8B00844650 /* Build configuration list for PBXNativeTarget "Frame counterTests" */;
+			buildPhases = (
+				D8DED3C81B130C8B00844650 /* Sources */,
+				D8DED3C91B130C8B00844650 /* Frameworks */,
+				D8DED3CA1B130C8B00844650 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8DED3CE1B130C8B00844650 /* PBXTargetDependency */,
+			);
+			name = "Frame counterTests";
+			productName = "Frame counterTests";
+			productReference = D8DED3CC1B130C8B00844650 /* Frame counterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,6 +279,13 @@
 					D8D05E951AF21FF700D3BDC3 = {
 						CreatedOnToolsVersion = 6.3.1;
 						TestTargetID = D8D05E801AF21FF700D3BDC3;
+					};
+					D8DED3B71B130C8A00844650 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					D8DED3CB1B130C8B00844650 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = D8DED3B71B130C8A00844650;
 					};
 				};
 			};
@@ -186,6 +304,8 @@
 			targets = (
 				D8D05E801AF21FF700D3BDC3 /* Swift_Whatevers */,
 				D8D05E951AF21FF700D3BDC3 /* Swift_WhateversTests */,
+				D8DED3B71B130C8A00844650 /* Frame counter */,
+				D8DED3CB1B130C8B00844650 /* Frame counterTests */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +322,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D8D05E941AF21FF700D3BDC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8DED3B61B130C8A00844650 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8DED3DC1B131AD800844650 /* LaunchScreen.xib in Resources */,
+				D8DED3C21B130C8A00844650 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8DED3CA1B130C8B00844650 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -229,6 +365,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D8DED3B41B130C8A00844650 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8DED3BF1B130C8A00844650 /* CounterController.swift in Sources */,
+				D8DED3BD1B130C8A00844650 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8DED3C81B130C8B00844650 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8DED3D31B130C8B00844650 /* Frame_counterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -236,6 +389,11 @@
 			isa = PBXTargetDependency;
 			target = D8D05E801AF21FF700D3BDC3 /* Swift_Whatevers */;
 			targetProxy = D8D05E971AF21FF700D3BDC3 /* PBXContainerItemProxy */;
+		};
+		D8DED3CE1B130C8B00844650 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8DED3B71B130C8A00844650 /* Frame counter */;
+			targetProxy = D8DED3CD1B130C8B00844650 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -252,6 +410,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				D8D05E901AF21FF700D3BDC3 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		D8DED3C01B130C8A00844650 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8DED3C11B130C8A00844650 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8DED3DA1B131AD800844650 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8DED3DB1B131AD800844650 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -396,6 +570,64 @@
 			};
 			name = Release;
 		};
+		D8DED3D41B130C8B00844650 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Frame counter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D8DED3D51B130C8B00844650 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Frame counter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D8DED3D61B130C8B00844650 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Frame counterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Frame counter.app/Frame counter";
+			};
+			name = Debug;
+		};
+		D8DED3D71B130C8B00844650 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Frame counterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Frame counter.app/Frame counter";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -425,6 +657,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D8DED3D81B130C8B00844650 /* Build configuration list for PBXNativeTarget "Frame counter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8DED3D41B130C8B00844650 /* Debug */,
+				D8DED3D51B130C8B00844650 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D8DED3D91B130C8B00844650 /* Build configuration list for PBXNativeTarget "Frame counterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8DED3D61B130C8B00844650 /* Debug */,
+				D8DED3D71B130C8B00844650 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
